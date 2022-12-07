@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull Latest Image') {
             steps {
-                bat 'docker pull docker-image-name'
+                bat 'docker pull madcard31/sample-docker-image'
             }
         }
         stage('Start Grid') {
