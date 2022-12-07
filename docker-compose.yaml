@@ -20,7 +20,7 @@ services:
     volumes:
       - ./downloads:/c/Users/user/Downloads
   sample-module-chrome:
-    image: docker-image-name
+    image: madcard31/sample-docker-image
     depends_on:
       - chrome
       - firefox
@@ -31,7 +31,7 @@ services:
     volumes:
       - ./output/sample-chrome-result:/usr/share/sample/test-output
   sample-module-firefox:
-    image: docker-image-name
+    image: madcard31/sample-docker-image
     depends_on:
       - chrome
       - firefox
